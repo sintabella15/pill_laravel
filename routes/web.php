@@ -15,4 +15,4 @@ use App\Http\Controllers\mahasiswaController;
 |
 */
 
-route::resource('mahasiswa',mahasiswaController::class);
+Route::resource('mahasiswa',mahasiswaController::class);

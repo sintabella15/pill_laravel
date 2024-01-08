@@ -7,14 +7,12 @@ use Illuminate\Http\Request;
 class mahasiswaController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Display a listing of the resource
      */
     public function index()
-    {
-        // 
-        return view(('mahasiswa/mahasiswa'));
+    { 
+        //Halaman Home mahasiswa
+        return view('mahasiswa.mahasiswa');
     }
 
     /**
@@ -24,8 +22,11 @@ class mahasiswaController extends Controller
      */
     public function create()
     {
-        //
+        //Halaman Tambah mahasiswa
+        return view('mahasiswa/create');
+
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +36,7 @@ class mahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Simpan tambah mahasiswa
     }
 
     /**
@@ -46,7 +47,7 @@ class mahasiswaController extends Controller
      */
     public function show($id)
     {
-        //
+        //Halaman Detail
     }
 
     /**
@@ -57,7 +58,7 @@ class mahasiswaController extends Controller
      */
     public function edit($id)
     {
-        //
+        //Halaman Edit mahasiswa
     }
 
     /**
@@ -69,7 +70,7 @@ class mahasiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //Simpan edit mahasiswa
     }
 
     /**
@@ -80,6 +81,6 @@ class mahasiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //Hapus mahasiswa
     }
 }
